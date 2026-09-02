@@ -2,10 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <!-- Profile image and intro text -->
+      <div class="hero-text">
+        <p class="eyebrow"><span class="material-symbols-outlined tiny-icon">auto_awesome</span> Computer Science Student</p>
+        <h1>Hi, I'm Micah Wheeler. <span class="material-symbols-outlined hero-sun">wb_sunny</span></h1>
+        <p class="description">
+          I am a creative student learning how to code worlds,
+          design interfaces, and turn ideas into interactive experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="button primary"><span class="material-symbols-outlined">person</span> About Me</a>
+          <a href="#projects" class="button secondary"><span class="material-symbols-outlined">rocket_launch</span> View Projects</a>
+          <a href="#musicians" class="button primary"><span class="material-symbols-outlined">music_note</span> Favorite Musicians</a>
+        </div>
+      </div>
+
+      <div class="profile-box">
+        <img
+          src="img/Micah.JPG"
+          alt="Profile portrait of Micah Wheeler"
+          class="profile-pic"
+        >
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about section">
+      <div class="container">
+        <h2><span class="material-symbols-outlined section-icon">dark_mode</span> About Me <span class="material-symbols-outlined moon-icon">brightness_3</span></h2>
+        <p>
+          I am currently studying Computer Science and I am excited to build
+          projects that mix design, code, and storytelling. I enjoy learning
+          new skills, solving problems creatively, and creating clean digital
+          experiences that feel welcoming and useful.
+          I am passionate about music, art, and technology, and I love to explore how these fields intersect in the digital world. I aim to try to discover new ways to express ideas and connect with people through my work, and to just have fun.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2><span class="material-symbols-outlined section-icon">stars</span> Projects <span class="material-symbols-outlined star-icon">auto_awesome</span></h2>
+
+        <div class="card-row">
+          <article class="card project-card">
+            <!-- Replace this image source with your own GIF or image -->
+            <img
+              src="img/Rigging.gif"
+              alt="Project 1 preview"
+              class="project-preview preview-one"
+            >
+            <h3>2d Model</h3>
+            <p>
+              A rigged 2d model of a character of mine that can be used as a facecam for fun.
+            </p>
+            <span class="tag">Digital Art + Animation</span>
+          </article>
+
+          <article class="card project-card">
+            <!-- Replace this image source with your own GIF or image -->
+            <img
+              src="img/Music.png"
+              alt="Project 2 preview"
+              class="project-preview preview-two"
+            >
+            <h3>Carousel Music</h3>
+            <p>
+              A fun song I made that I tried to make sound like a carousel. It has a fun and whimsical feel, and I hope it brings a nostalgic smile to your face.
+            </p>
+            <span class="tag">Digital Music</span>
+          </article>
+
+          <article class="card project-card">
+            <!-- Replace this image source with your own GIF or image -->
+            <img
+              src="img/Gaming.gif"
+              alt="Project 3 preview"
+              class="project-preview preview-three"
+            >
+            <h3>Toys Game</h3>
+            <p>
+              A fun game about finding lost toys, find toys to gain abilities and explore the world. I made this game in Unity and it was a fun experience to learn how to make a game from scratch.
+            </p>
+            <span class="tag">Game Development</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="musicians" class="musicians section">
+      <div class="container">
+        <h2><span class="material-symbols-outlined section-icon">music_note</span> Favorite Musicians <span class="material-symbols-outlined moon-icon">nightlight</span></h2>
+
+        <div class="card-row">
+          <article class="card musician-card">
+            <img
+              src="img/Trickle.JPG"
+              alt="Artist listening to music"
+            >
+            <h3>Trickle</h3>
+            <p>A Jpop artist who I think has a very powerful and energetic sound that makes you want to move.</p>
+          </article>
+
+          <article class="card musician-card">
+            <img
+              src="img/Ivycomb.JPG"
+              alt="Artist performing live"
+            >
+            <h3>Ivycomb</h3>
+            <p>a great artist with electronic grooves and a futuristic vibe.</p>
+          </article>
+
+          <article class="card musician-card">
+            <img
+              src="img/YonKaGor.JPG"
+              alt="Artist smiling while playing music"
+            >
+            <h3>YonKaGor</h3>
+            <p>an artist who specializes in jazz like music that hits hard.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
