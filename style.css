@@ -301,17 +301,27 @@ h2 {
 }
 
 .website-link {
-  display: inline-block;
-  background: #c4b5fd;
-  color: #1d1328;
-  border-radius: 999px;
-  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid #c4b5fd;
+  color: #f7f3ff;
+  border-radius: 8px;
+  padding: 8px 14px;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.2s ease;
 }
 
 .website-link:hover {
-  opacity: 0.9;
+  background: #c4b5fd;
+  color: #1d1328;
+}
+
+.website-link:focus-visible {
+  outline: 3px solid #ffd98a;
+  outline-offset: 3px;
 }
 
 .tag {
